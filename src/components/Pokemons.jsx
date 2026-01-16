@@ -46,7 +46,21 @@ export const Pokemons = () => {
     }, []); 
 
     
-    if (loading) return <p>Cargando...</p>;
+    if (loading) {
+        return (
+            <section className='p-4 py-5 sm:p-6 lg:p-8'>
+                <div className='min-h-[55vh] grid place-items-center'>
+                    <div className='w-[64px]'>
+                        <img
+                            className="contrast-50 animate-spin-slow"
+                            src="/pokeball-icon.png"
+                            alt="Cargando"
+                        />
+                    </div>
+                </div>
+            </section>
+        );
+    }
     if (error) return <p>Error al cargar los datos.</p>;
 
     return (
