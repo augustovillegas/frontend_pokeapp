@@ -2,7 +2,7 @@ import React from 'react';
 import { IconSearch } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';
 import { PokemonList } from './PokemonList';
-import { API_BASE_URL } from '../config/env';
+import { getAllPokemons } from '../config/pokemonApi';
 
 
 export const Pokemons = () => {
@@ -24,15 +24,7 @@ export const Pokemons = () => {
     
     useEffect(() => {
 
-        const pokemonURL = `${API_BASE_URL}/api/pokemones/all`;
-
-        fetch(pokemonURL)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
+        getAllPokemons()
             .then(data => {
                 console.log(data); 
                 setAllPokemones(data.data);
@@ -49,7 +41,7 @@ export const Pokemons = () => {
     if (loading) {
         return (
             <section className='p-4 py-5 sm:p-6 lg:p-8'>
-                <div className='min-h-[55vh] grid place-items-center'>
+                <div className='min-h-[55vh] grid place-items-center text-center gap-3'>
                     <div className='w-[64px]'>
                         <img
                             className="contrast-50 animate-spin-slow"
@@ -57,6 +49,9 @@ export const Pokemons = () => {
                             alt="Cargando"
                         />
                     </div>
+                    <p className='text-slate-500 text-sm sm:text-base'>
+                        Conectando al servidor, espere por favor...
+                    </p>
                 </div>
             </section>
         );
