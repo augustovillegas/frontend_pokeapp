@@ -36,13 +36,15 @@ export const Aside = ({ pokemon, isLoading }) => {
       </article>
         
        {/* Loading */}
-       <div className="w-[60px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-center">
-        <img
-          className="contrast-50 animate-spin-slow"
-          src="/pokeball-icon.png"
-          alt=""
-        />
-        <span className="block text-slate-400 text-sm mt-2">Cargando..</span>
+       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex flex-col items-center text-center gap-2">
+        <div className="w-[60px] h-[60px] flex items-center justify-center">
+          <img
+            className="w-full h-full contrast-50 animate-spin-slow"
+            src="/pokeball-icon.png"
+            alt="Cargando"
+          />
+        </div>
+        <span className="text-slate-400 text-sm leading-tight">Cargando...</span>
       </div>
 
     </section>

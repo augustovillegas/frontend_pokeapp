@@ -41,16 +41,16 @@ export const Pokemons = () => {
     if (loading) {
         return (
             <section className='p-4 py-5 sm:p-6 lg:p-8'>
-                <div className='min-h-[55vh] grid place-items-center text-center gap-3'>
-                    <div className='w-[64px]'>
+                <div className='min-h-[55vh] flex flex-col items-center justify-center text-center gap-2'>
+                    <div className='w-16 h-16 flex items-center justify-center'>
                         <img
-                            className="contrast-50 animate-spin-slow"
+                            className='w-full h-full contrast-50 animate-spin-slow'
                             src="/pokeball-icon.png"
                             alt="Cargando"
                         />
                     </div>
-                    <p className='text-slate-500 text-sm sm:text-base'>
-                        Conectando al servidor, espere por favor...
+                    <p className='max-w-xs text-slate-400 text-sm sm:text-base leading-tight'>
+                        Conectando al servidor...
                     </p>
                 </div>
             </section>
