@@ -2,12 +2,12 @@
   <h1>Front Pokedex</h1>
   <p>SPA en React + Vite para buscar y explorar Pokemon con detalle responsive.</p>
   <p>
-    <a href="#-descripcion">Descripcion</a> |
-    <a href="#-caracteristicas">Caracteristicas</a> |
-    <a href="#-inicio-rapido">Inicio rapido</a> |
-    <a href="#-arquitectura">Arquitectura</a> |
-    <a href="#-api-integration--endpoints">API</a> |
-    <a href="#-deployment">Deployment</a>
+    <a href="#descripcion">Descripcion</a> |
+    <a href="#caracteristicas">Caracteristicas</a> |
+    <a href="#inicio-rapido">Inicio rapido</a> |
+    <a href="#arquitectura">Arquitectura</a> |
+    <a href="#api-integration--endpoints">API</a> |
+    <a href="#deployment">Deployment</a>
   </p>
   <p>
     <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white" alt="React" />
@@ -21,34 +21,34 @@
 
 ---
 
-## Tabla de Contenidos
+## 📚 Tabla de Contenidos
 
-- [Descripcion](#-descripcion)
-- [Caracteristicas](#-caracteristicas)
-- [Stack Tecnologico](#-stack-tecnologico)
-- [Inicio Rapido](#-inicio-rapido)
-- [Arquitectura](#-arquitectura)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Componentes / Modulos Principales](#-componentes--modulos-principales)
-- [Validaciones](#-validaciones)
-- [API Integration / Endpoints](#-api-integration--endpoints)
-- [Scripts Disponibles](#-scripts-disponibles)
-- [Variables de Entorno](#-variables-de-entorno)
-- [Deployment](#-deployment)
-- [Guias de Uso](#-guias-de-uso)
-- [Personalizacion / Extension](#-personalizacion--extension)
-- [Contribuciones](#-contribuciones)
-- [Licencia](#-licencia)
+- [📝 Descripcion](#descripcion)
+- [✨ Caracteristicas](#caracteristicas)
+- [🧰 Stack Tecnologico](#stack-tecnologico)
+- [⚡ Inicio Rapido](#inicio-rapido)
+- [🧱 Arquitectura](#arquitectura)
+- [🗂️ Estructura del Proyecto](#estructura-del-proyecto)
+- [🧩 Componentes / Modulos Principales](#componentes--modulos-principales)
+- [✅ Validaciones](#validaciones)
+- [🔌 API Integration / Endpoints](#api-integration--endpoints)
+- [📜 Scripts Disponibles](#scripts-disponibles)
+- [🔧 Variables de Entorno](#variables-de-entorno)
+- [🚀 Deployment](#deployment)
+- [🧭 Guias de Uso](#guias-de-uso)
+- [🎨 Personalizacion / Extension](#personalizacion--extension)
+- [🤝 Contribuciones](#contribuciones)
+- [📄 Licencia](#licencia)
 
 ---
 
-## Descripcion
+## 📝 Descripcion
 
 Esta aplicacion frontend permite buscar Pokemon por nombre, listar resultados y ver el detalle seleccionado. Esta pensada para usuarios que desean explorar un catalogo de Pokemon con una UI clara y responsive. Es una SPA (Single Page Application) construida con React y Vite, y consume un API local para obtener los datos.
 
 ---
 
-## Caracteristicas
+## ✨ Caracteristicas
 
 - Busqueda por nombre con filtrado en cliente.
 - Listado en grid responsive con cards de tamano consistente.
@@ -58,7 +58,7 @@ Esta aplicacion frontend permite buscar Pokemon por nombre, listar resultados y 
 
 ---
 
-## Stack Tecnologico
+## 🧰 Stack Tecnologico
 
 | Tecnologia | Proposito |
 | --- | --- |
@@ -70,7 +70,7 @@ Esta aplicacion frontend permite buscar Pokemon por nombre, listar resultados y 
 
 ---
 
-## Inicio Rapido
+## ⚡ Inicio Rapido
 
 ### Prerrequisitos
 
@@ -104,7 +104,7 @@ npm run preview
 
 ---
 
-## Arquitectura
+## 🧱 Arquitectura
 
 ### Patrones utilizados
 
@@ -130,7 +130,7 @@ npm run preview
 
 ---
 
-## Estructura del Proyecto
+## 🗂️ Estructura del Proyecto
 
 ```
 07-frontpokedex/
@@ -160,7 +160,7 @@ npm run preview
 
 ---
 
-## Componentes / Modulos Principales
+## 🧩 Componentes / Modulos Principales
 
 - `Pokemons.jsx`: obtiene el listado desde la API, maneja search y renderiza el grid.
 - `PokemonList.jsx`: define el grid responsive con cards de ancho consistente.
@@ -172,7 +172,7 @@ npm run preview
 
 ---
 
-## Validaciones
+## ✅ Validaciones
 
 - La busqueda usa `onSubmit` y filtra localmente por nombre.
 - Se manejan estados de carga y error al consumir la API.
@@ -180,7 +180,7 @@ npm run preview
 
 ---
 
-## API Integration / Endpoints
+## 🔌 API Integration / Endpoints
 
 Base URL actual:
 
@@ -212,7 +212,7 @@ Base URL actual:
 
 ---
 
-## Scripts Disponibles
+## 📜 Scripts Disponibles
 
 | Script | Comando | Descripcion |
 | --- | --- | --- |
@@ -223,7 +223,7 @@ Base URL actual:
 
 ---
 
-## Variables de Entorno
+## 🔧 Variables de Entorno
 
 Este proyecto no requiere variables de entorno en la version actual.
 
@@ -233,7 +233,7 @@ Este proyecto no requiere variables de entorno en la version actual.
 
 ---
 
-## Deployment
+## 🚀 Deployment
 
 Servicio recomendado: Vercel o Netlify.
 
@@ -252,7 +252,7 @@ npm run build
 
 ---
 
-## Guias de Uso
+## 🧭 Guias de Uso
 
 - Buscar Pokemon: escribe un nombre y presiona el boton de busqueda.
 - Ver detalle: haz click en una card; en desktop se abre el panel lateral y en mobile el modal.
@@ -260,7 +260,7 @@ npm run build
 
 ---
 
-## Personalizacion / Extension
+## 🎨 Personalizacion / Extension
 
 - Cambiar URL de API: edita `src/components/Pokemons.jsx`.
 - Ajustar colores por tipo: modifica `src/utils/constants.js`.
@@ -268,7 +268,7 @@ npm run build
 
 ---
 
-## Contribuciones
+## 🤝 Contribuciones
 
 1. Haz un fork del proyecto.
 2. Crea una rama: `git checkout -b feature/nueva-funcionalidad`.
@@ -277,7 +277,7 @@ npm run build
 
 ---
 
-## Licencia
+## 📄 Licencia
 
 Este proyecto esta bajo la licencia MIT.
 
